@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  29 JAN 2020 01:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  29 JAN 2020 01:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -375,12 +375,12 @@ e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 42.
+LaTeX Font Info:    Try loading font information for U+msa on input line 43.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 42.
+LaTeX Font Info:    Try loading font information for U+msb on input line 43.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -389,36 +389,30 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Warning: No \author given.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--80
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
 [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 79--82
+
+ []
+
 <math.png, id=36, 719.68875pt x 140.525pt>
 File: math.png Graphic file (type png)
  <use math.png>
-Package pdftex.def Info: math.png used on input line 85.
+Package pdftex.def Info: math.png used on input line 87.
 (pdftex.def)             Requested size: 345.0pt x 67.36545pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 151--152
-
- []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 153--154
@@ -430,8 +424,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
+
+ []
+
 [2 <./math.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
  []
 
@@ -442,29 +441,33 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--260
-
- []
-
-[3]
 Underfull \hbox (badness 10000) in paragraph at lines 261--262
 
  []
 
-
+[3]
 Underfull \hbox (badness 10000) in paragraph at lines 263--264
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 265.
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--266
+
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 267.
 [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 265.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 267.
  (./Practica1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 265.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 265.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 267.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 267.
 Package rerunfilecheck Info: File `Practica1.out' has not changed.
 (rerunfilecheck)             Checksum: F0F73FC0F134680D9772EA7DFA84522F;94.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 265.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 267.
  ) 
 Here is how much of TeX's memory you used:
  7998 strings out of 492995
@@ -489,7 +492,7 @@ ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
 2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/20
 17/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/201
 7/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Practica1.pdf (4 pages, 176636 bytes).
+Output written on Practica1.pdf (4 pages, 176936 bytes).
 PDF statistics:
  130 PDF objects out of 1000 (max. 8388607)
  105 compressed objects within 2 object streams
