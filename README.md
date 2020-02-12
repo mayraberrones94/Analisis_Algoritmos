@@ -7,3 +7,6 @@ Clase de Algoritmos
 
 [Practica 2](https://github.com/mayraberrones94/Analisis_Algoritmos/blob/master/Practica_2/Practica_2.pdf)
 [codigo](https://github.com/mayraberrones94/Analisis_Algoritmos/blob/master/Practica_2/elementos.py)
+
+
+[Practica 3](https://github.com/mayraberrones94/Analisis_Algoritmos/blob/master/Practica_3/Practica-3.pdf)
