@@ -1,0 +1,157 @@
+\documentclass{article}   
+
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{hyperref}
+\usepackage{eqnarray,amsmath}
+\usepackage[table]{xcolor}
+
+\usepackage{listings}
+%
+% \usepackage{mathptmx}      % use Times fonts if available on your TeX system
+%
+% insert here the call for the packages your document requires
+%\usepackage{latexsym}
+% etc.
+%
+\usepackage{graphicx}
+
+
+\usepackage[table]{xcolor}
+\usepackage{rotating}
+\usepackage{caption}
+
+%% if you use PostScript figures in your article
+%% use the graphics package for simple commands
+\usepackage{graphics}
+
+
+%% or use the graphicx package for more complicated commands
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
+
+\usepackage[utf8]{inputenc}
+ 
+\usepackage{listings}
+\usepackage{xcolor}
+ 
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+ 
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+ 
+\lstset{style=mystyle}
+% please place your own definitions here and don't use \def but
+% \newcommand{}{}
+%
+% Insert the name of "your journal" with
+% \journalname{myjournal}
+%
+\begin{document}
+
+\title{Practice7}
+
+
+\maketitle
+Mayra Cristina Berrones Reyes
+
+\section{Introduction}
+
+\subsection{Arrays vs lists}
+
+Arrays and lists often are confused on any programming language. In our case, we searched for the concept of arrays and lists inside a python language. In python, this two structures have similar functions, as in both of them store data, but the main difference can be seen on their structures and how the data can be accessed.\\
+
+A list in python is a data structure that holds a collection of items. They are declared with enclosed brackets like [\textit{item1}], and they appear in a specific order, that enables us to use an index to access the information. Lists are mutable, which mean they can change, add, or remove items after we create de list. The elements inside a list do not require to be unique, and a list can hold several different types of data inside (integers, strings, objects, etc.).\\
+
+An array is also a data structure that stores a collection of items, they can be mutable, ordered, enclosed in brackets and have non unique items. The first thing that separates lists form arrays is that arrays can not hold different types of data.\\
+
+Another difference is that arrays need to be declared in python, and lists do not. Python needs to import the library \textit{Numpy} to be able to use an array. In Table \ref{las} we can see the main differences between arrays and lists.\\
+
+
+\begin{table}
+\caption{Main differences of lists and arrays in python.}	
+\begin{tabular}{|p{55mm}|p{55mm}| }
+
+\hline
+\textbf{Lists} & \textbf{Arrays} \\
+\hline
+$\bullet$ Lists can be can be flexible and hold arbitrary data. & $\bullet$ Arrays need to be imported from other libraries.\\
+$\bullet$ They are a part of the python syntaxes so they do not need to be declared first. & $\bullet$ Arrays can not be resized, it needs to be copied to another larger array.\\
+$\bullet$ Can be resized quickly in a time efficient manner. Python initializes some elements in the list at the initialization. & $\bullet$ Arrays can only store items with values of uniform data types.\\
+$\bullet$ Lists can hold different types of data. & $\bullet$ They are specially optimized for arithmetic computations.\\
+$\bullet$ Mathematical functions can not be directly applied to all the list, it needs to be applied to each item individually. & $\bullet$ Since arrays stay the size that they were initialized with, they are compact\\
+$\bullet$ They consume more memory as they are allocated a few extra elements to allow for quicker appending.& $\bullet$ In the array you can find an item easily by their index.\\
+$\bullet$ To search for an item, you need to start from the first element, and go through all of the other items until you reach the one you want. & $\bullet$ Operations like delete and insertion take a lot of computational time.\\
+$\bullet$ Delete and insertion are easy. & \\
+\hline
+
+\hline
+\end{tabular}
+\label{las}
+\end{table}
+
+Taking into consideration the pros and cons of using arrays or lists, we demonstrate two problems to see if this features are correct.\\
+
+\subsection{Palindrome}
+
+For this first example we have the problem of a palindrome. Remembering the differences we described in Table \ref{las} we have that arrays are more well suited for this type of problem, since we can search and compare the contents of the first and last item on the array using the the index numbers, as we can see in Figure \ref{fig1}. Then in Figure \ref{fig2} we can see that we will have to pass the list several times to check between the first and the last items on the list, since each element is pointing to the direction were the next item is stored (it is not a fixed parameter).\\
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=\linewidth]{palarr.png}
+\label{fig1}
+	\caption{Palindrome example for an array}
+\end{figure}
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=\linewidth]{pallis.png}
+\label{fig2}
+	\caption{Palindrome example of a list}
+\end{figure}
+
+
+\subsection{Delete all the duplicated values}
+
+Now we have another example in which we need to remove the duplicated values of an array. In this case, the array will not do so well, since we have to move all of the elements so that there is not a null value inside the array, and we can safely remove the last items that are null, as we can see on Figure \ref{figura4}. On the other hand, we have the list, that on this case perform better than the arrays, because we can easily bypass the elements to remove, and have the remaining items point only to the unique values. This example can be seen in Figure \ref{fig5}.
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=\linewidth]{elmarr.png}
+\label{figura4}
+	\caption{Example for deleting duplicated values of an array}
+\end{figure}
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=\linewidth]{elmlis.png}
+\label{fig5}
+	\caption{Example to delete duplicated values on a list}
+\end{figure}
+
+
+\section{Conclusions}
+
+It took me a while to grasp the concept of this practice, because I am very used to handle python, and every time I saw something referenced as a list or an array, I thought they meant the same. Now, after reading more about the rules, I figured that I have been using lists too liberally, and that it may not seem very significant the computational time, because despite their drawbacks, both structures perform very fast, but I realize now that some of the problems I had in the past, programing simple things that resulted in errors or leaked memory could have been because I was not using the proper structure to store my data.\\
+
+
+ 
+\end{document}
